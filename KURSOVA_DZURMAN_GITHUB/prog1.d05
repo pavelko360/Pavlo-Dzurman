@@ -1,0 +1,17 @@
+#*Prog1*#
+PROGRAM prog1;
+BEGIN
+VAR INT_2 Aaaaaaaaa,Bbbbbbbbb,Xxxxxxxxx,Yyyyyyyyy;
+INPUT Aaaaaaaaa;
+INPUT Bbbbbbbbb;
+OUTPUT Aaaaaaaaa + Bbbbbbbbb;
+OUTPUT Aaaaaaaaa - Bbbbbbbbb;
+OUTPUT Aaaaaaaaa * Bbbbbbbbb;
+OUTPUT Aaaaaaaaa DIV Bbbbbbbbb;
+OUTPUT Aaaaaaaaa MOD Bbbbbbbbb;
+
+Xxxxxxxxx==>(Aaaaaaaaa - Bbbbbbbbb) * 10 + (Aaaaaaaaa + Bbbbbbbbb) DIV 10;
+Yyyyyyyyy==>Xxxxxxxxx + (Xxxxxxxxx MOD 10);
+OUTPUT Xxxxxxxxx;
+OUTPUT Yyyyyyyyy;
+END

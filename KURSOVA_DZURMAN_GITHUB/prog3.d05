@@ -1,0 +1,45 @@
+#*Prog2*#
+PROGRAM prog2;
+BEGIN
+VAR INT_2  Aaaaaaaaa,Aaaaaaaa2,Bbbbbbbbb,Xxxxxxxxx,Cccccccc1,Cccccccc2;
+INPUT Aaaaaaaaa;
+INPUT Bbbbbbbbb;
+FOR Aaaaaaaa2==>Aaaaaaaaa TO Bbbbbbbbb DO
+	OUTPUT Aaaaaaaa2 * Aaaaaaaa2;
+
+FOR Aaaaaaaa2==>Bbbbbbbbb TO Aaaaaaaaa DO
+	OUTPUT Aaaaaaaa2 * Aaaaaaaa2;
+
+Xxxxxxxxx==>0;
+Cccccccc1==>0;
+WHILE Cccccccc1 LT Aaaaaaaaa 
+BEGIN
+	Cccccccc2==>0;
+	WHILE Cccccccc2 LT Bbbbbbbbb
+	BEGIN	
+		Xxxxxxxxx==>Xxxxxxxxx + 1;
+		Cccccccc2==>Cccccccc2 + 1;
+	END
+	END WHILE
+Cccccccc1==>Cccccccc1 + 1;
+END	
+END WHILE
+OUTPUT Xxxxxxxxx;
+
+Xxxxxxxxx==>0;
+Cccccccc1==>1;
+REPEAT
+BEGIN
+  Cccccccc2==>1;
+  REPEAT
+  BEGIN
+    Xxxxxxxxx==>Xxxxxxxxx + 1;
+    Cccccccc2==>Cccccccc2 + 1;
+	END
+  UNTIL !!(Cccccccc2 GT Bbbbbbbbb)
+  Cccccccc1==>Cccccccc1 + 1;
+ END
+UNTIL !!(Cccccccc1 GT Aaaaaaaaa)
+OUTPUT Xxxxxxxxx;
+
+END

@@ -1,0 +1,57 @@
+#*Prog2*#
+PROGRAM prog2;
+BEGIN
+VAR INT_2 Aaaaaaaaa,Bbbbbbbbb,Ccccccccc;
+INPUT Aaaaaaaaa;
+INPUT Bbbbbbbbb;
+INPUT Ccccccccc;
+IF(Aaaaaaaaa GT Bbbbbbbbb)
+BEGIN
+	IF(Aaaaaaaaa GT Ccccccccc)
+	BEGIN
+		GOTO Abigger;		
+	END
+	ELSE
+	BEGIN
+		OUTPUT Ccccccccc;
+		GOTO OutofIF;
+		Abigger:		
+		OUTPUT Aaaaaaaaa;
+		GOTO OutofIF;
+	END
+END	
+IF(Bbbbbbbbb LT Ccccccccc)
+BEGIN
+	OUTPUT Ccccccccc;
+END	
+ELSE
+BEGIN
+	OUTPUT Bbbbbbbbb;
+END
+OutofIF:	
+
+IF((Aaaaaaaaa = Bbbbbbbbb) && (Aaaaaaaaa = Ccccccccc) && (Bbbbbbbbb = Ccccccccc))
+BEGIN
+	OUTPUT 1;
+END	
+ELSE
+BEGIN
+	OUTPUT 0;
+END
+IF((Aaaaaaaaa LT 0) || (Bbbbbbbbb LT 0) || (Ccccccccc LT 0))
+BEGIN
+	OUTPUT -1;
+END	
+ELSE
+BEGIN
+	OUTPUT 0;
+END
+IF(!!(Aaaaaaaaa LT (Bbbbbbbbb + Ccccccccc)))
+BEGIN
+	OUTPUT(10);
+END	
+ELSE
+BEGIN
+	OUTPUT(0);
+END
+END
